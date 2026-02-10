@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Collection</title>
+    <style>
+        .photo-grid {
+            display: grid;
+            /* This creates 3 columns that adjust automatically */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Ensuring all images stay the same size */
+        .photo-grid img {
+            width: 100%;
+            height: 200px;
+            /* Forces a uniform height */
+            object-fit: cover;
+            /* Crops the image to fit the box instead of squishing it */
+            border-radius: 15px;
+        }
+
+        /* Ensuring all images stay the same size */
+        .photo-grid video {
+            width: 100%;
+            height: 200px;
+            /* Forces a uniform height */
+            object-fit: cover;
+            /* Crops the image to fit the box instead of squishing it */
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header for all pages in the website. Contains a logo and a navbar with links to other pages. -->
+    <header
+        style="background-color: rgb(44, 62, 80); display: flex; justify-content: space-between; align-items: center; padding: 30px;">
+        <!-- Logo for Header section -->
+        <div><img src="img/icons/logo.png" height="90px" width="90px"></div>
+        <!-- Navbar -->
+        <nav>
+            <a href="index.html" style="color: white; text-decoration: none; margin-left: 10px">About</a>
+            <a href="hobbies.html" style="color: white; text-decoration: none; margin-left: 10px">Hobbies</a>
+            <a href="map.html" style="color: white; text-decoration: none; margin-left: 10px">Map</a>
+            <a href="photos.html" style="color: white; text-decoration: none; margin-left: 10px">Photos</a>
+            <a href="projects.html" style="color: white; text-decoration: none; margin-left: 10px">Projects</a>
+            <a href="contact.html" style="color: white; text-decoration: none; margin-left: 10px">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Soccer Photos -->
+        <section>
+            <h2>Soccer</h2>
+            <p>Experiences I had as player and coach</p>
+            <!-- Container for photos -->
+            <div class="photo-grid">
+                <!-- Figure tag for each image and caption -->
+                <figure>
+                    <img src="img/soccer/sanpa.jpeg" alt="Middle school tournament">
+                    <figcaption>Trip with Middle School team in Mexico</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/phx-rising.jpeg" alt="Phoenix Rising try outs">
+                    <figcaption>Try outs for Phoenix Rising in 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/gcc-sign.jpeg" alt="First year in college">
+                    <figcaption>Signing with college</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/gcc-shoot.jpeg" alt="Second year in college">
+                    <figcaption>Sophomore year in college</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/bench.jpeg" alt="One of the most exciting games">
+                    <figcaption>One of my most exciting games in college</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/az-western.jpeg" alt="Trip to Yuma, AZ">
+                    <figcaption>Trip to Yuma, AZ in college</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/gcc-senior.jpeg" alt="Last game for college">
+                    <figcaption>Last game in college</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/gcc-last.jpeg" alt="Sophomore night">
+                    <figcaption>Sophomore night in college</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/champs1.jpeg" alt="First championship as coach">
+                    <figcaption>First trophy as coach</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/champs2.jpeg" alt="Second championship as coach">
+                    <figcaption>Second trophy as coach</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/champs3.jpeg" alt="Finalist as coach">
+                    <figcaption>Finalist against the third best team in the country as coach</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/soccer/monday-league.jpeg" alt="Monday league champion">
+                    <figcaption>I just play for fun with my friends on Mondays</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Girlfriend Photos -->
+        <section>
+            <h2>Girlfriend</h2>
+            <p>Experiences I had with my girlfriend</p>
+            <!-- Container for photos -->
+            <div class="photo-grid">
+                <figure>
+                    <img src="img/girlfriend/first-xmas.jpeg" alt="First Christmas together">
+                    <figcaption>Our first Chirstmas together</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/girlfriend/21st-bday.jpeg" alt="My 21st birthday">
+                    <figcaption>My 21st birthday in 2023</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/girlfriend/luis-miguel.jpeg" alt="Luis Miguel concert">
+                    <figcaption>Concert of one of our favorite artists</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/girlfriend/coaching.jpeg" alt="Coach supporter">
+                    <figcaption>Supporting me as a coach</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/girlfriend/sedona.jpeg" alt="Trip to Sedona">
+                    <figcaption>Our trip to Sedona</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/girlfriend/soccer.jpeg" alt="My soccer fan">
+                    <figcaption>My #1 fan</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/girlfriend/kids.jpeg" alt="AI generated image">
+                    <figcaption>AI generated image of us as kids</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/girlfriend/navojoa.jpeg" alt="Trip to Mexico">
+                    <figcaption>Trip to her hometown in 2026</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Trips & Adventures -->
+        <section>
+            <h2>Trips & Adventures</h2>
+            <p>Trips I have made with family and friends</p>
+            <!-- Container for photos -->
+            <div class="photo-grid">
+                <figure>
+                    <img src="img/trips/ruidoso.jpeg" alt="First trip to Ruidoso with friends">
+                    <figcaption>Friends trip to Ruidoso, New Mexico, in 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/mazatlan.jpeg" alt="Trip to Mazatlan with family">
+                    <figcaption>Family trip to Mazatlan, Mexico, in 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/cancun.jpeg" alt="Trip to Cancun with family">
+                    <figcaption>Family trip to Cancun, Mexico, in 2021</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/flagstaff.jpeg" alt="Trip to Flagstaff with friends">
+                    <figcaption>Friends trip to Flagstaff, Arizona, in 2023</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/kino.jpeg" alt="Trip to Kino with my friend">
+                    <figcaption>Trip to Bahia de Kino, Mexico, in 2023</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/ruidoso2.jpeg" alt="Second trip to Ruidoso with friends">
+                    <figcaption>Friends trip to Ruidoso, New Mexico, in 2024</figcaption>
+                </figure>
+                <!-- Figure tag with video and caption -->
+                <figure>
+                    <video width="320" height="240" autoplay muted loop playsinline>
+                        <source src="img/trips/skydiving.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Skydiving in Buckeye, Arizona, in 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/san-carlos.jpeg" alt="Trip to San Carlos with family">
+                    <figcaption>Family trip to San Carlos, Mexico, in 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/chapala.jpeg" alt="Trip to Chapala with friends">
+                    <figcaption>Friends trip to Chapala, Mexico, in 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/disney.jpeg" alt="Trip to Disney with family">
+                    <figcaption>Family trip to Disney, California, in 2025</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/trips/chihuahua.jpeg" alt="Trip to Chihuahua with friends">
+                    <figcaption>Friends trip to Chihuahua, Mexico, in 2026</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section for all web pages -->
+    <footer style="background-color: rgb(44, 62, 80); color: white; text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.8rem;">
+        © 2026 Luis Tirado. All rights reserved.
+    </footer>
+</body>
+
+</html>
