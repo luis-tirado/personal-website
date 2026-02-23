@@ -1,39 +1,35 @@
-@use 'variables' as *;
+@use 'variables' as v;
 
-/* === GLOBAL VARIABLES === */
-:root {
-    --bg-color: #{$bg-color};
-    --header-bg: #{$header-bg};
-    --primary-color: #{$primary-color};
-    --text-color: #{$text-color};
-    --text-light: #{$text-light};
-    --white: #{$white};
-    --border-color: #{$border-color};
-    --shadow: #{$shadow};
-    --shadow-hover: #{$shadow-hover};
-}
-
-/* === BASE STYLES === */
+/* ... (previous :root and reset styles) ... */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-color);
+    font-family: Arial, sans-serif;
+    background-color: v.$light;
+    color: v.$dark;
 }
 
 img,
 video {
     max-width: 100%;
     height: auto;
+    display: block;
+    /* Removes weird gaps below images */
+}
+
+/* Ensure that placeholders don't break the layout of specific items */
+.profile-pic[src^="data:image/svg+xml"] {
+    object-fit: cover;
+    background-color: #ecf0f1;
+}
+
+.logo img[src^="data:image/svg+xml"],
+.school-logo[src^="data:image/svg+xml"] {
+    padding: 10px;
+    /* Gives the logo placeholder some breathing room */
+    background-color: #ecf0f1;
 }

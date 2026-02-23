@@ -1,8 +1,8 @@
-@use 'variables' as *;
+@use 'variables' as v;
 
 /* === HEADER & NAVIGATION === */
 header {
-    background-color: var(--header-bg);
+    background-color: v.$header-bg;
     padding: 20px 5%;
     display: flex;
     justify-content: space-between;
@@ -25,17 +25,18 @@ nav {
 }
 
 nav a {
-    color: var(--white);
+    color: v.$white;
     font-weight: 500;
     padding: 8px 12px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 nav a:hover,
 nav a.active {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: v.$primary-color;
+    color: v.$white;
 }
 
 /* === MAIN CONTENT & FOOTER === */
@@ -45,8 +46,8 @@ main {
 }
 
 footer {
-    background-color: var(--header-bg);
-    color: var(--white);
+    background-color: v.$header-bg;
+    color: v.$white;
     text-align: center;
     padding: 20px;
     margin-top: auto;
