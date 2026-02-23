@@ -151,13 +151,35 @@ footer {
     flex-wrap: wrap;
 }
 
+/* Specific colors for the introduction list items */
 .passion-pills li {
-    background-color: var(--primary-color);
     color: var(--white);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9rem;
+    font-weight: bold;
 }
+
+.pill-cars {
+    background-color: #e74c3c;
+}
+
+/* Red */
+.pill-soccer {
+    background-color: #27ae60;
+}
+
+/* Green */
+.pill-software {
+    background-color: #8e44ad;
+}
+
+/* Purple */
+.pill-fitness {
+    background-color: #d35400;
+}
+
+/* Orange/Brown */
 
 .history-box {
     background-color: var(--white);
@@ -197,9 +219,10 @@ footer {
     box-shadow: var(--shadow-hover);
 }
 
-.card img {
-    height: 50px;
+.card i {
+    font-size: 3rem;
     margin-bottom: 15px;
+    display: inline-block;
 }
 
 .card h3 {
@@ -213,20 +236,25 @@ footer {
     text-align: left;
 }
 
-.card.cars h3 {
-    color: red;
+/* Auto-colors the icons to match the pills */
+.card.cars h3,
+.card.cars i {
+    color: #e74c3c;
 }
 
-.card.soccer h3 {
-    color: green;
+.card.soccer h3,
+.card.soccer i {
+    color: #27ae60;
 }
 
-.card.fitness h3 {
-    color: brown;
+.card.fitness h3,
+.card.fitness i {
+    color: #d35400;
 }
 
-.card.software h3 {
-    color: purple;
+.card.software h3,
+.card.software i {
+    color: #8e44ad;
 }
 
 /* === EDUCATION ACCORDION === */
@@ -369,16 +397,37 @@ textarea {
     margin-top: 20px;
 }
 
+/* Specific styling for the Social Media Links */
 .social-connect nav a {
     padding: 10px 20px;
     border-radius: 8px;
     color: var(--white);
     font-weight: bold;
-    background-color: var(--header-bg);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between icon and text */
+    transition: opacity 0.3s ease;
 }
 
 .social-connect nav a:hover {
-    background-color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.social-linkedin {
+    background-color: #0077b5;
+}
+
+.social-facebook {
+    background-color: #1877f2;
+}
+
+.social-instagram {
+    background-color: #e4405f;
+}
+
+.social-github {
+    background-color: #333333;
 }
 
 /* === PHOTOS PAGE === */
@@ -414,19 +463,33 @@ textarea {
     font-weight: 500;
 }
 
-/* === HOBBIES & MAP PLACEHOLDERS === */
+/* === COLORED PLACEHOLDERS === */
 .placeholder-box {
-    background: var(--white);
     height: 400px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: var(--shadow);
-    margin: 0 5%;
+    margin: 0 5% 40px;
     font-size: 1.5rem;
-    color: var(--text-light);
-    border: 2px dashed var(--border-color);
+    font-weight: bold;
+    border: 2px dashed;
+    /* Keeps the dashed look to show it's a placeholder */
+}
+
+/* Green Map Placeholder */
+.placeholder-map {
+    background-color: #e8f5e9;
+    border-color: #81c784;
+    color: #2e7d32;
+}
+
+/* Blue Slider Placeholder for Hobbies */
+.placeholder-slider {
+    background-color: #e3f2fd;
+    border-color: #64b5f6;
+    color: #1565c0;
 }
 
 /* === RESPONSIVE DESIGN === */
