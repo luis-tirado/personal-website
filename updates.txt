@@ -5,7 +5,7 @@
     code into logical chunks.
 
 2. By using the SASS architechture we get a centralized design control. this
-    means we can update the entire look of the entire website by changing just one line of code.
+    means we can update the entire look of the website by changing just one line of code.
 
 3. This approach turns styling from a chore to a system, and the codebase remains
     clean, professional, and easy to manage.
