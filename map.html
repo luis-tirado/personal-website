@@ -7,6 +7,28 @@
     <title>Notable Places | Luis Tirado</title>
     <!-- Linked to external CSS -->
     <link rel="stylesheet" href="css/mysite.css">
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- THIS FIXES THE MAP: Include Leaflet CSS for the Map styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        /* Specific styling just for the map container */
+        #interactive-map {
+            height: 500px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            z-index: 1;
+        }
+
+        /* Container for the map to keep it aligned with site */
+        .map-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,9 +52,8 @@
             <h2>Notable Places 📍</h2>
         </div>
 
-        <div class="placeholder-box placeholder-map">
-            <i class="fa-solid fa-map-location-dot" style="margin-right: 15px;"></i>
-            [ Interactive Map Placeholder ]
+        <div class="map-container">
+            <div id="interactive-map"></div>
         </div>
     </main>
 
@@ -40,6 +61,13 @@
     <footer>
         © 2026 Luis Tirado. All rights reserved.
     </footer>
+
+    <!-- Add Scripts -->
+    <!--  Leaflet JavaScript file -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
 </body>
 
 </html>

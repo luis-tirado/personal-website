@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+/* === GLOBAL VARIABLES === */
+:root {
+    --bg-color: #{$bg-color};
+    --header-bg: #{$header-bg};
+    --primary-color: #{$primary-color};
+    --text-color: #{$text-color};
+    --text-light: #{$text-light};
+    --white: #{$white};
+    --border-color: #{$border-color};
+    --shadow: #{$shadow};
+    --shadow-hover: #{$shadow-hover};
+}
+
+/* === BASE STYLES === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
