@@ -4,63 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Collection</title>
-    <style>
-        .photo-grid {
-            display: grid;
-            /* This creates 3 columns that adjust automatically */
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        /* Ensuring all images stay the same size */
-        .photo-grid img {
-            width: 100%;
-            height: 200px;
-            /* Forces a uniform height */
-            object-fit: cover;
-            /* Crops the image to fit the box instead of squishing it */
-            border-radius: 15px;
-        }
-
-        /* Ensuring all images stay the same size */
-        .photo-grid video {
-            width: 100%;
-            height: 200px;
-            /* Forces a uniform height */
-            object-fit: cover;
-            /* Crops the image to fit the box instead of squishing it */
-            border-radius: 15px;
-        }
-    </style>
+    <title>Photo Collection | Luis Tirado</title>
+    <!-- Linked to external CSS -->
+    <link rel="stylesheet" href="css/mysite.css">
 </head>
 
 <body>
-    <!-- Header for all pages in the website. Contains a logo and a navbar with links to other pages. -->
-    <header
-        style="background-color: rgb(44, 62, 80); display: flex; justify-content: space-between; align-items: center; padding: 30px;">
-        <!-- Logo for Header section -->
-        <div><img src="img/icons/logo.png" height="90px" width="90px"></div>
-        <!-- Navbar -->
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/icons/logo.png" alt="Luis Tirado Logo">
+        </div>
         <nav>
-            <a href="index.html" style="color: white; text-decoration: none; margin-left: 10px">About</a>
-            <a href="hobbies.html" style="color: white; text-decoration: none; margin-left: 10px">Hobbies</a>
-            <a href="map.html" style="color: white; text-decoration: none; margin-left: 10px">Map</a>
-            <a href="photos.html" style="color: white; text-decoration: none; margin-left: 10px">Photos</a>
-            <a href="projects.html" style="color: white; text-decoration: none; margin-left: 10px">Projects</a>
-            <a href="contact.html" style="color: white; text-decoration: none; margin-left: 10px">Contact</a>
+            <a href="index.html">About</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="map.html">Map</a>
+            <a href="photos.html" class="active">Photos</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
         <!-- Soccer Photos -->
         <section>
-            <h2>Soccer</h2>
-            <p>Experiences I had as player and coach</p>
-            <!-- Container for photos -->
+            <div class="section-title">
+                <h2>Soccer</h2>
+                <p>Experiences I had as player and coach</p>
+            </div>
             <div class="photo-grid">
-                <!-- Figure tag for each image and caption -->
                 <figure>
                     <img src="img/soccer/sanpa.jpeg" alt="Middle school tournament">
                     <figcaption>Trip with Middle School team in Mexico</figcaption>
@@ -114,9 +86,10 @@
 
         <!-- Girlfriend Photos -->
         <section>
-            <h2>Girlfriend</h2>
-            <p>Experiences I had with my girlfriend</p>
-            <!-- Container for photos -->
+            <div class="section-title">
+                <h2>Girlfriend</h2>
+                <p>Experiences I had with my girlfriend</p>
+            </div>
             <div class="photo-grid">
                 <figure>
                     <img src="img/girlfriend/first-xmas.jpeg" alt="First Christmas together">
@@ -155,9 +128,10 @@
 
         <!-- Trips & Adventures -->
         <section>
-            <h2>Trips & Adventures</h2>
-            <p>Trips I have made with family and friends</p>
-            <!-- Container for photos -->
+            <div class="section-title">
+                <h2>Trips & Adventures</h2>
+                <p>Trips I have made with family and friends</p>
+            </div>
             <div class="photo-grid">
                 <figure>
                     <img src="img/trips/ruidoso.jpeg" alt="First trip to Ruidoso with friends">
@@ -183,9 +157,9 @@
                     <img src="img/trips/ruidoso2.jpeg" alt="Second trip to Ruidoso with friends">
                     <figcaption>Friends trip to Ruidoso, New Mexico, in 2024</figcaption>
                 </figure>
-                <!-- Figure tag with video and caption -->
+                <!-- Video Figure -->
                 <figure>
-                    <video width="320" height="240" autoplay muted loop playsinline>
+                    <video autoplay muted loop playsinline>
                         <source src="img/trips/skydiving.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -211,11 +185,8 @@
         </section>
     </main>
 
-    <!-- Footer section for all web pages -->
-    <footer style="background-color: rgb(44, 62, 80); color: white; text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-            font-size: 0.8rem;">
+    <!-- Footer -->
+    <footer>
         © 2026 Luis Tirado. All rights reserved.
     </footer>
 </body>

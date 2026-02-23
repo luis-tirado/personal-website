@@ -4,31 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies</title>
+    <title>Hobbies | Luis Tirado</title>
+    <!-- Linked to external CSS -->
+    <link rel="stylesheet" href="css/mysite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header for all pages in the website. Contains a logo and a navbar with links to other pages. -->
-    <header
-        style="background-color: rgb(44, 62, 80); display: flex; justify-content: space-between; align-items: center; padding: 30px;">
-        <!-- Logo for Header section -->
-        <div><img src="img/icons/logo.png" height="90px" width="90px"></div>
-        <!-- Navbar -->
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/icons/logo.png" alt="Luis Tirado Logo">
+        </div>
         <nav>
-            <a href="index.html" style="color: white; text-decoration: none; margin-left: 10px">About</a>
-            <a href="hobbies.html" style="color: white; text-decoration: none; margin-left: 10px">Hobbies</a>
-            <a href="map.html" style="color: white; text-decoration: none; margin-left: 10px">Map</a>
-            <a href="photos.html" style="color: white; text-decoration: none; margin-left: 10px">Photos</a>
-            <a href="projects.html" style="color: white; text-decoration: none; margin-left: 10px">Projects</a>
-            <a href="contact.html" style="color: white; text-decoration: none; margin-left: 10px">Contact</a>
+            <a href="index.html">About</a>
+            <a href="hobbies.html" class="active">Hobbies</a>
+            <a href="map.html">Map</a>
+            <a href="photos.html">Photos</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Footer section for all web pages -->
-    <footer style="background-color: rgb(44, 62, 80); color: white; text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-            font-size: 0.8rem;">
+    <main>
+        <!-- Hobbies Content (Placeholders based on wireframes) -->
+        <div class="section-title">
+            <h2>My Hobbies</h2>
+        </div>
+
+        <div class="placeholder-box">
+            [ Carousel / Slider Placeholder ]
+        </div>
+
+        <div class="section-title">
+            <h3>My Hobbies Collection</h3>
+            <p>Explore the activities that bring joy to my life</p>
+        </div>
+
+        <div class="grid-container">
+            <article class="card soccer">
+                <i class="fa-solid fa-futbol"></i>
+                <h3>Soccer</h3>
+                <p>Staying active, enjoying the competitive spirit of the game, and coaching local teams.<br><br></p>
+                <button class="btn" style="margin-top:15px; width:100%">Learn More</button>
+            </article>
+            <article class="card software">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Software</h3>
+                <p>Building personal projects, learning new programming languages, and solving complex logic problems.
+                </p>
+                <button class="btn" style="margin-top:15px; width:100%">Learn More</button>
+            </article>
+            <article class="card cars">
+                <i class="fa-solid fa-car"></i>
+                <h3>Cars</h3>
+                <p>Working on vehicle maintenance, exploring automotive design, and learning how engines function.</p>
+                <button class="btn" style="margin-top:15px; width:100%">Learn More</button>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
         © 2026 Luis Tirado. All rights reserved.
     </footer>
 </body>
