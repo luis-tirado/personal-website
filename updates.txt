@@ -1,0 +1,17 @@
+1. UI Wireframe Designs were made since first milestone.
+
+2. About Me page looks pretty much complete according to this design. We have 4 sections:
+	2.1 Introduction
+	2.2 History
+	2.3 Interests in cards
+	2.4 Education section designed in a drop down menu style.
+
+3. List of Hobbies has now three cards similar to these shown in the design, but a placeholder was left to a component from a library in the future.
+
+4. Notable Places Map has link to stylesheet, but implementation is still pending for JavaScript features.
+
+5. Photo Collection also has CSS styling and responsive. Photos are show in cards similar to the design. In the future, instead of using a flexbox for the photos, a component from a library will be used to horizontally scroll the gallery.
+
+6. Coding Projects has now CSS styling, and all the buttons are linked to external sites. Projects are split in cards and contain a small logo for the project. I left a Coming Soon card for future updates. The blue demo button will display a mini video of the game built.
+
+7. Contact Me page is now split in sections, and the forms look better to provide good user experience. In the future, different colors will be set to the links in the bottom section.
