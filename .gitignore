@@ -1,1 +1,22 @@
+--- OS Files ---
+
+.DS_Store
+Thumbs.db
+
+--- Editor / IDE ---
+
 .vscode/
+.idea/
+*.swp
+
+--- SASS / CSS Compiler Files ---
+
+Ignore the "map" files (these are only for debugging, not needed for the live site)
+
+*.css.map
+*.sass-cache/
+
+--- Temporary Files ---
+
+*.log
+tmp/

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* === GLOBAL VARIABLES === */
 :root {
   --bg-color: #f4f7f9;
@@ -20,7 +19,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -125,8 +124,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 5px solid var(--white);
   box-shadow: var(--shadow);
 }
@@ -153,6 +151,7 @@ footer {
   flex-wrap: wrap;
 }
 
+/* Specific colors for the introduction list items */
 .passion-pills li {
   color: var(--white);
   padding: 5px 15px;
@@ -165,17 +164,22 @@ footer {
   background-color: #e74c3c;
 }
 
+/* Red */
 .pill-soccer {
   background-color: #27ae60;
 }
 
+/* Green */
 .pill-software {
   background-color: #8e44ad;
 }
 
+/* Purple */
 .pill-fitness {
   background-color: #d35400;
 }
+
+/* Orange/Brown */
 
 .history-box {
   background-color: var(--white);
@@ -232,6 +236,7 @@ footer {
   text-align: left;
 }
 
+/* Auto-colors the icons to match the pills */
 .card.cars h3,
 .card.cars i {
   color: #e74c3c;
@@ -275,6 +280,7 @@ summary {
   color: var(--header-bg);
   cursor: pointer;
   list-style: none;
+  /* Hides default arrow */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -285,13 +291,13 @@ summary::-webkit-details-marker {
 }
 
 summary::after {
-  content: "▼";
+  content: '▼';
   font-size: 1.2rem;
   color: var(--primary-color);
 }
 
 details[open] summary::after {
-  content: "▲";
+  content: '▲';
 }
 
 .details-content {
@@ -379,7 +385,7 @@ textarea {
 }
 
 .social-connect {
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
   text-align: center;
 }
 
@@ -391,6 +397,7 @@ textarea {
   margin-top: 20px;
 }
 
+/* Specific styling for the Social Media Links */
 .social-connect nav a {
   padding: 10px 20px;
   border-radius: 8px;
@@ -444,8 +451,7 @@ textarea {
 .photo-grid video {
   width: 100%;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -468,14 +474,17 @@ textarea {
   font-size: 1.5rem;
   font-weight: bold;
   border: 2px dashed;
+  /* Keeps the dashed look to show it's a placeholder */
 }
 
+/* Green Map Placeholder */
 .placeholder-map {
   background-color: #e8f5e9;
   border-color: #81c784;
   color: #2e7d32;
 }
 
+/* Blue Slider Placeholder for Hobbies */
 .placeholder-slider {
   background-color: #e3f2fd;
   border-color: #64b5f6;
@@ -487,10 +496,12 @@ textarea {
   .contact-container {
     grid-template-columns: 1fr;
   }
+
   .hero {
     flex-direction: column;
     text-align: center;
   }
+
   .passion-pills {
     justify-content: center;
   }
