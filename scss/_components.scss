@@ -42,7 +42,6 @@
 
         p {
             margin-bottom: 12px;
-            /* Space between the text and the pills */
         }
     }
 
@@ -58,17 +57,21 @@
 
 .passion-pills {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 15px;
+    //* Added breathing room above pills */
     flex-wrap: wrap;
 
     li {
         color: v.$white;
         padding: 8px 20px;
+        //* Increased padding for cleaner pill look */
         border-radius: 20px;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         font-weight: bold;
+        transition: transform 0.2s ease, filter 0.2s ease;
+        cursor: default;
 
         &.pill-cars {
             background-color: v.$color-cars;
@@ -85,10 +88,6 @@
         &.pill-fitness {
             background-color: v.$color-fitness;
         }
-
-        transition: transform 0.2s ease,
-        filter 0.2s ease;
-        cursor: default;
 
         &:hover {
             transform: scale(1.05);
@@ -111,7 +110,7 @@
     }
 }
 
-/* === GRID SYSTEM & CARDS === */
+//* === GRID SYSTEM & CARDS === */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -135,14 +134,12 @@
         margin-top: 15px;
         padding: 12px 20px;
         background-color: v.$primary-color;
-        /* A nice, deep primary blue */
         color: v.$white;
         font-size: 1rem;
         font-weight: 600;
         text-align: center;
         border: none;
         border-radius: 8px;
-        /* Smooth, rounded corners */
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
@@ -194,7 +191,7 @@
     }
 }
 
-/* === EDUCATION ACCORDION & LOGO ON RIGHT === */
+//* === EDUCATION ACCORDION === */
 .accordion-container {
     max-width: 800px;
     margin: 0 auto;
@@ -236,7 +233,6 @@ details {
     color: v.$text-light;
     border-top: 1px solid v.$border-color;
     display: flex;
-    /* Centers the logo to the right of text */
     align-items: center;
     gap: 20px;
 
@@ -258,148 +254,102 @@ details {
     }
 }
 
-/* === CONTACT PAGE & SOCIAL LINKS === */
+//* === CONTACT PAGE & SOCIAL LINKS === */
 .contact-container {
     max-width: 1100px;
+    //* Wider container */
     margin: 40px auto;
     padding: 0 5%;
     display: flex;
     gap: 40px;
     align-items: flex-start;
 
-    .contact-info,
-    .social-connect {
-        flex: 1;
-        min-width: 300px;
-    }
-
+    //* Left Sidebar: Groups Info and Social together */
     .contact-sidebar {
         flex: 1;
-        /* Sidebar takes 1 part */
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
 
+    //* Right Side: The Form */
     .contact-form {
-        flex: 1.5; // This makes the form wider than the info boxes
+        flex: 1.5;
+        //* Makes the form wider than the sidebar */
         background-color: v.$white;
         padding: 30px;
         border-radius: 15px;
         box-shadow: v.$shadow;
-    }
 
-    .contact-form .btn {
-        width: 100%;
-        background-color: v.$primary-color;
-        color: v.$white;
-        padding: 14px 20px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-        display: block;
+        .form-group {
+            margin-bottom: 20px;
 
-        &:hover {
-            background-color: v.$primary-color;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+                color: v.$header-bg;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid v.$border-color;
+                border-radius: 8px;
+                font-family: inherit;
+                box-sizing: border-box;
+            }
+
+            textarea {
+                min-height: 120px;
+                resize: vertical;
+            }
+
+            input:focus,
+            textarea:focus {
+                outline: none;
+                border-color: v.$primary-color;
+            }
         }
 
-        &:active {
-            transform: translateY(0); // Pushes down when clicked
-        }
-    }
-
-    /* Fix the button inside the form */
-    .btn {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    /* Responsive: Stack vertically on smaller screens */
-    @media (max-width: 900px) {
-        flex-direction: column;
-
-        .contact-info,
-        .contact-form,
-        .social-connect {
+        //* Form Button Styling */
+        .btn {
             width: 100%;
-        }
-    }
-
-    /* === SOCIAL CONNECT BUTTONS === */
-    .social-connect {
-        text-align: center;
-
-        nav {
-            display: flex;
-            justify-content: center;
-            /* Centers the buttons */
-            gap: 15px;
-            flex-wrap: wrap;
+            background-color: v.$primary-color;
+            color: v.$white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            display: block;
             margin-top: 10px;
 
-            a {
-                padding: 12px 20px;
-                border-radius: 8px;
-                color: v.$white !important;
-                /* Ensures the text and icons stay white */
-                font-weight: bold;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                transition: opacity 0.3s ease, transform 0.2s ease;
+            &:hover {
+                background-color: v.$primary-color;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            }
 
-                &.social-linkedin {
-                    background-color: v.$color-linkedin;
-                }
-
-                &.social-facebook {
-                    background-color: v.$color-facebook;
-                }
-
-                &.social-instagram {
-                    background-color: v.$color-instagram;
-                }
-
-                &.social-github {
-                    background-color: v.$color-github;
-                }
-
-                &:hover {
-                    opacity: 0.85;
-                    transform: translateY(-3px);
-                }
+            &:active {
+                transform: translateY(0);
             }
         }
     }
 
-    .form input,
-    .form textarea {
-        width: 100%;
-        padding: 12px;
-        margin-top: 8px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-sizing: border-box;
-    }
+    @media (max-width: 900px) {
+        flex-direction: column;
 
-    /* Stacks columns on smaller screens */
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-    }
-
-    @media(max-width: 600) {
-        flex-wrap: wrap;
+        .contact-sidebar,
+        .contact-form {
+            width: 100%;
+        }
     }
 }
 
-/* Styling the left side (Info) */
 .contact-info {
     background-color: v.$white;
     padding: 30px;
@@ -419,59 +369,69 @@ details {
         margin-top: 15px;
 
         td {
-            padding: 10px 0;
+            padding: 12px 0;
+            // * Improved spacing between rows */
             border-bottom: 1px solid v.$border-color;
             color: v.$text-light;
 
             strong {
                 color: v.$header-bg;
+                margin-right: 8px;
+                // * Adds space after the colon */
             }
         }
 
-        /* Remove the bottom border from the last item */
         tr:last-child td {
             border-bottom: none;
         }
     }
 }
 
-/* Styling the right side (Form) */
-.contact-form {
-    background-color: v.$white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: v.$shadow;
+.social-connect {
+    text-align: center;
 
-    .form-group {
-        margin-bottom: 20px;
+    h3 {
+        color: v.$header-bg;
+    }
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: v.$header-bg;
-        }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 15px;
 
-        input,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid v.$border-color;
+        a {
+            padding: 12px 20px;
             border-radius: 8px;
-            font-family: inherit;
-            box-sizing: border-box;
-            /* Prevents inputs from overflowing */
-        }
+            color: v.$white !important;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: opacity 0.3s ease, transform 0.2s ease;
 
-        textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
+            &.social-linkedin {
+                background-color: v.$color-linkedin;
+            }
 
-        input:focus,
-        textarea:focus {
-            outline: none;
-            border-color: v.$primary-color;
+            &.social-facebook {
+                background-color: v.$color-facebook;
+            }
+
+            &.social-instagram {
+                background-color: v.$color-instagram;
+            }
+
+            &.social-github {
+                background-color: v.$color-github;
+            }
+
+            &:hover {
+                opacity: 0.85;
+                transform: translateY(-3px);
+            }
         }
     }
 }
@@ -556,6 +516,4 @@ details {
             color: rgba(0, 0, 0, 0.1);
         }
     }
-
-
 }
