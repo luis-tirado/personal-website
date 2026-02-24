@@ -22,7 +22,8 @@ video {
 
 /* Ensure that placeholders don't break the layout of specific items */
 .profile-pic[src^="data:image/svg+xml"] {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: #ecf0f1;
 }
 
@@ -114,12 +115,24 @@ footer {
   padding: 60px 5%;
   background-color: #ecf0f1;
   border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+.hero .hero-text h1 {
+  margin-bottom: 8px;
+}
+.hero .hero-text h2 {
+  margin-bottom: 20px;
+}
+.hero .hero-text p {
+  margin-bottom: 12px;
+  /* Space between the text and the pills */
 }
 .hero .profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 5px solid #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
@@ -128,12 +141,12 @@ footer {
   display: flex;
   gap: 10px;
   list-style: none;
-  margin-top: 10px;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
 .passion-pills li {
   color: #ffffff;
-  padding: 5px 15px;
+  padding: 8px 20px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: bold;
@@ -149,6 +162,14 @@ footer {
 }
 .passion-pills li.pill-fitness {
   background-color: #d35400;
+}
+.passion-pills li {
+  transition: transform 0.2s ease, filter 0.2s ease;
+  cursor: default;
+}
+.passion-pills li:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 .history-box {
@@ -200,7 +221,7 @@ footer {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .card .btn:hover {
-  background-color: #217dbb;
+  background-color: #3498db;
   transform: translateY(-3px);
 }
 .card:active {
@@ -295,16 +316,75 @@ details[open] summary::after {
 
 /* === CONTACT PAGE & SOCIAL LINKS === */
 .contact-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 40px auto;
   padding: 0 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Creates a 2-column layout */
+  display: flex;
   gap: 40px;
-  align-items: start;
+  align-items: flex-start;
+}
+.contact-container .contact-info,
+.contact-container .social-connect {
+  flex: 1;
+  min-width: 300px;
+}
+.contact-container .contact-sidebar {
+  flex: 1;
+  /* Sidebar takes 1 part */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-container .contact-form {
+  flex: 1.5;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.contact-container .contact-form .btn {
+  width: 100%;
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: block;
+}
+.contact-container .contact-form .btn:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+.contact-container .contact-form .btn:active {
+  transform: translateY(0);
+}
+.contact-container {
+  /* Fix the button inside the form */
+}
+.contact-container .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-container {
+  /* Responsive: Stack vertically on smaller screens */
+}
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container .contact-info,
+  .contact-container .contact-form,
+  .contact-container .social-connect {
+    width: 100%;
+  }
+}
+.contact-container {
   /* === SOCIAL CONNECT BUTTONS === */
-  /* Stacks columns on smaller screens */
 }
 .contact-container .social-connect {
   text-align: center;
@@ -314,7 +394,7 @@ details[open] summary::after {
   justify-content: center;
   /* Centers the buttons */
   gap: 15px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 .contact-container .social-connect nav a {
@@ -345,6 +425,19 @@ details[open] summary::after {
   opacity: 0.85;
   transform: translateY(-3px);
 }
+.contact-container .form input,
+.contact-container .form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.contact-container {
+  /* Stacks columns on smaller screens */
+}
 @media (max-width: 768px) {
   .contact-container {
     grid-template-columns: 1fr;
@@ -373,15 +466,17 @@ details[open] summary::after {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-  /* Remove the bottom border from the last item */
 }
 .contact-info table td {
-  padding: 15px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #e0e0e0;
   color: #666666;
 }
 .contact-info table td strong {
   color: #2c3e50;
+}
+.contact-info table {
+  /* Remove the bottom border from the last item */
 }
 .contact-info table tr:last-child td {
   border-bottom: none;
@@ -453,7 +548,8 @@ details[open] summary::after {
 .photo-grid figure video {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -495,6 +591,4 @@ details[open] summary::after {
   right: 20px;
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.1);
-}
-
-/*# sourceMappingURL=mysite.css.map */
+}/*# sourceMappingURL=mysite.css.map */
