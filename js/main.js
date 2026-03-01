@@ -11,6 +11,7 @@ const App = {
         this.setupImageFallbacks();
         this.setupProjectModal();   // 
         this.initMap();             // For map in maps.html
+        this.setupContactForm();
     },
 
     // loads components: header.html and footer.html
@@ -141,6 +142,32 @@ const App = {
             if (img.complete && img.naturalWidth === 0) {
                 img.src = placeholder;
             }
+        });
+    },
+
+    setupContactForm() {
+        const form = document.querySelector('.contact-form form');
+        if (!form) return;
+
+        emailjs.init(CONFIG.EMAILJS_PUBLIC_KEY);
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const btn = form.querySelector('.btn');
+            btn.innerText = 'Sending...';
+
+            // Send form
+            emailjs.sendForm(CONFIG.EMAILJS_SERVICE_KEY, CONFIG.EMAILJS_TEMPLATE_KEY, form)
+                .then(() => {
+                    alert('Message sent successfully! I will get back to you soon.');
+                    form.reset();
+                    btn.innerText = 'Send Message';
+                }, (error) => {
+                    console.error('FAILED...', error);
+                    alert('Oops! Something went wrong. Please try again.');
+                    btn.innerText = 'Send Message';
+                });
         });
     }
 };

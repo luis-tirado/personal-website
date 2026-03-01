@@ -20,3 +20,4 @@ Ignore the "map" files (these are only for debugging, not needed for the live si
 
 *.log
 tmp/
+js/config.js
