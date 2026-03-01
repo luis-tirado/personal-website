@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* ... (previous :root and reset styles) ... */
 * {
   margin: 0;
@@ -24,7 +23,7 @@ video {
 /* Ensure that placeholders don't break the layout of specific items */
 .profile-pic[src^="data:image/svg+xml"] {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   background-color: #ecf0f1;
 }
 
@@ -95,7 +94,6 @@ footer {
   margin: 40px auto 30px;
   padding: 0 5%;
 }
-
 .section-title h2 {
   display: inline-block;
   font-size: 2rem;
@@ -103,7 +101,6 @@ footer {
   border-bottom: 4px solid #3498db;
   padding-bottom: 5px;
 }
-
 .section-title p {
   color: #666666;
   margin-top: 10px;
@@ -120,27 +117,24 @@ footer {
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 10px;
 }
-
 .hero .hero-text h1 {
   margin-bottom: 8px;
 }
-
 .hero .hero-text h2 {
   margin-bottom: 20px;
 }
-
 .hero .hero-text p {
   margin-bottom: 12px;
 }
-
 .hero .profile-pic {
   width: 200px;
   height: 200px;
-  border-radius: 100%;
+  border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border: 5px solid #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
 }
 
 .passion-pills {
@@ -150,7 +144,6 @@ footer {
   margin-top: 15px;
   flex-wrap: wrap;
 }
-
 .passion-pills li {
   color: #ffffff;
   padding: 8px 20px;
@@ -160,23 +153,18 @@ footer {
   transition: transform 0.2s ease, filter 0.2s ease;
   cursor: default;
 }
-
 .passion-pills li.pill-cars {
   background-color: #e74c3c;
 }
-
 .passion-pills li.pill-soccer {
   background-color: #27ae60;
 }
-
 .passion-pills li.pill-software {
   background-color: #8e44ad;
 }
-
 .passion-pills li.pill-fitness {
   background-color: #d35400;
 }
-
 .passion-pills li:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
@@ -191,7 +179,6 @@ footer {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   text-align: justify;
 }
-
 .history-box p {
   margin-bottom: 15px;
 }
@@ -213,11 +200,11 @@ footer {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card .btn {
   display: block;
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 15px;
   padding: 12px 20px;
   background-color: #3498db;
   color: #ffffff;
@@ -229,50 +216,37 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .card .btn:hover {
   background-color: #3498db;
   transform: translateY(-3px);
 }
-
 .card:active {
   transform: translateY(0);
 }
-
 .card i {
   font-size: 3rem;
   margin-bottom: 15px;
   display: inline-block;
 }
-
 .card h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
-
 .card p {
   color: #666666;
   font-size: 0.95rem;
   text-align: left;
 }
-
-.card.cars h3,
-.card.cars i {
+.card.cars h3, .card.cars i {
   color: #e74c3c;
 }
-
-.card.soccer h3,
-.card.soccer i {
+.card.soccer h3, .card.soccer i {
   color: #27ae60;
 }
-
-.card.fitness h3,
-.card.fitness i {
+.card.fitness h3, .card.fitness i {
   color: #d35400;
 }
-
-.card.software h3,
-.card.software i {
+.card.software h3, .card.software i {
   color: #8e44ad;
 }
 
@@ -290,7 +264,6 @@ details {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
 details summary {
   padding: 20px;
   font-size: 1.1rem;
@@ -302,12 +275,10 @@ details summary {
   align-items: center;
   list-style: none;
 }
-
 details summary::after {
   content: "▼";
   color: #3498db;
 }
-
 details[open] summary::after {
   content: "▲";
 }
@@ -320,11 +291,9 @@ details[open] summary::after {
   align-items: center;
   gap: 20px;
 }
-
 .details-content p {
   flex: 1;
 }
-
 .details-content .school-logo {
   width: 100px;
   height: auto;
@@ -332,7 +301,6 @@ details[open] summary::after {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
-
 @media (max-width: 650px) {
   .details-content {
     flex-direction: column-reverse;
@@ -348,14 +316,12 @@ details[open] summary::after {
   gap: 40px;
   align-items: flex-start;
 }
-
 .contact-container .contact-sidebar {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
 .contact-container .contact-form {
   flex: 1.5;
   background-color: #ffffff;
@@ -363,18 +329,15 @@ details[open] summary::after {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
 .contact-container .contact-form .form-group {
   margin-bottom: 20px;
 }
-
 .contact-container .contact-form .form-group label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
   color: #2c3e50;
 }
-
 .contact-container .contact-form .form-group input,
 .contact-container .contact-form .form-group textarea {
   width: 100%;
@@ -384,18 +347,15 @@ details[open] summary::after {
   font-family: inherit;
   box-sizing: border-box;
 }
-
 .contact-container .contact-form .form-group textarea {
   min-height: 120px;
   resize: vertical;
 }
-
 .contact-container .contact-form .form-group input:focus,
 .contact-container .contact-form .form-group textarea:focus {
   outline: none;
   border-color: #3498db;
 }
-
 .contact-container .contact-form .btn {
   width: 100%;
   background-color: #3498db;
@@ -410,22 +370,18 @@ details[open] summary::after {
   display: block;
   margin-top: 10px;
 }
-
 .contact-container .contact-form .btn:hover {
   background-color: #3498db;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
-
 .contact-container .contact-form .btn:active {
   transform: translateY(0);
 }
-
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
   }
-
   .contact-container .contact-sidebar,
   .contact-container .contact-form {
     width: 100%;
@@ -438,31 +394,26 @@ details[open] summary::after {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
 .contact-info h3 {
   color: #2c3e50;
   border-bottom: 2px solid #3498db;
   padding-bottom: 8px;
   display: inline-block;
 }
-
 .contact-info table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
 }
-
 .contact-info table td {
   padding: 12px 0;
   border-bottom: 1px solid #e0e0e0;
   color: #666666;
 }
-
 .contact-info table td strong {
   color: #2c3e50;
   margin-right: 8px;
 }
-
 .contact-info table tr:last-child td {
   border-bottom: none;
 }
@@ -470,11 +421,9 @@ details[open] summary::after {
 .social-connect {
   text-align: center;
 }
-
 .social-connect h3 {
   color: #2c3e50;
 }
-
 .social-connect nav {
   display: flex;
   justify-content: center;
@@ -482,7 +431,6 @@ details[open] summary::after {
   flex-wrap: wrap;
   margin-top: 15px;
 }
-
 .social-connect nav a {
   padding: 12px 20px;
   border-radius: 8px;
@@ -494,23 +442,18 @@ details[open] summary::after {
   gap: 10px;
   transition: opacity 0.3s ease, transform 0.2s ease;
 }
-
 .social-connect nav a.social-linkedin {
   background-color: #0077b5;
 }
-
 .social-connect nav a.social-facebook {
   background-color: #1877f2;
 }
-
 .social-connect nav a.social-instagram {
   background-color: #e4405f;
 }
-
 .social-connect nav a.social-github {
   background-color: #333333;
 }
-
 .social-connect nav a:hover {
   opacity: 0.85;
   transform: translateY(-3px);
@@ -524,14 +467,12 @@ details[open] summary::after {
   padding: 0 5%;
   margin-bottom: 40px;
 }
-
 .photo-grid .button {
   padding: 10px 20px;
   border-radius: 20px;
   background-color: #3498db;
   color: white;
 }
-
 .photo-grid figure {
   background: #ffffff;
   padding: 15px;
@@ -541,31 +482,27 @@ details[open] summary::after {
   margin: 0;
   transition: transform 0.3s ease;
 }
-
 .photo-grid figure:hover {
   transform: translateY(-5px);
 }
-
 .photo-grid figure img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: #f0f0f0;
 }
-
 .photo-grid figure video {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: #f0f0f0;
 }
-
 .photo-grid figure figcaption {
   font-size: 0.95rem;
   color: #666666;
@@ -586,13 +523,11 @@ details[open] summary::after {
   border: 2px dashed;
   background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
 }
-
 .placeholder-box.placeholder-slider {
   border-color: #3498db;
   color: #2c3e50;
   position: relative;
 }
-
 .placeholder-box.placeholder-slider::before {
   content: "‹";
   position: absolute;
@@ -600,7 +535,6 @@ details[open] summary::after {
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.1);
 }
-
 .placeholder-box.placeholder-slider::after {
   content: "›";
   position: absolute;
@@ -609,11 +543,8 @@ details[open] summary::after {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.placeholder-box {
-  /* === MODAL / VIDEO POPUP === */
-}
-
-.placeholder-box .modal {
+/* === MODAL / VIDEO POPUP === */
+.modal {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -629,29 +560,26 @@ details[open] summary::after {
   justify-content: center;
   /* Class added by JavaScript to show the modal */
 }
-
-.placeholder-box .modal.show {
+.modal.show {
   display: flex;
   animation: fadeIn 0.3s ease;
 }
-
-.placeholder-box .modal .modal-content {
+.modal .modal-content {
   position: relative;
-  background-color: var(--white);
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 15px;
-  max-width: 800px;
+  max-width: 500px;
   width: 90%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
-.placeholder-box .modal .modal-content .close-btn {
+.modal .modal-content .close-btn {
   position: absolute;
   top: -15px;
   right: -15px;
   background: #e74c3c;
   /* Red close button */
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 50%;
   width: 35px;
@@ -661,30 +589,23 @@ details[open] summary::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
-
-.placeholder-box .modal .modal-content .close-btn:hover {
+.modal .modal-content .close-btn:hover {
   transform: scale(1.1);
 }
-
-.placeholder-box .modal .modal-content {
-  /* Responsive 16:9 Video Container */
-}
-
-.placeholder-box .modal .modal-content .video-container {
+.modal .modal-content .video-container {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   border-radius: 10px;
-  background: #000;
+  background: #1a1a1a;
 }
-
-.placeholder-box .modal .modal-content .video-container iframe,
-.placeholder-box .modal .modal-content .video-container video {
+.modal .modal-content .video-container iframe,
+.modal .modal-content .video-container video {
   position: absolute;
   top: 0;
   left: 0;
@@ -698,7 +619,6 @@ details[open] summary::after {
     opacity: 0;
     transform: scale(0.95);
   }
-
   to {
     opacity: 1;
     transform: scale(1);

@@ -1,7 +1,6 @@
 /**
  * MAIN SCRIPT
  * 
- * App is variable that stores
  */
 
 const App = {
