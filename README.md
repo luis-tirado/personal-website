@@ -1,20 +1,27 @@
 # Personal Professional Website
-
-Iteration 1 of a multi-page personal portfolio developed for **CST-120: Web Development** at **Grand Canyon University**.
+A professional portfolio website built to showcase my software development projects, technical skills, and background. This site focuses on clean code, responsive design, and dynamic user interaction.
 
 ## 📋 Project Summary
 This project is a personal website designed to showcase my background, interests, and professional growth in software development.
 
 ## 🚀 Features
-* **About Me**: A detailed section covering my history, from being raised in, to pursuing a Bachelor's in Software Development at GCU.
-* **Hobbies**: An interactive layout for sharing my passions, including soccer, fitness, and cars.
-* **Adventures**: A photo gallery grid displaying travel and personal experiences.
-* **Coding Projects**: A dedicated space for showcasing software projects and GitHub repositories.
-* **Contact System**: A functional UI for professional inquiries with social media integration.
+* **Dynamic Functionality**: Integrated JavaScript to enhance user experience with interactive elements.
+
+* **Interactive Mapping**: Implemented Leaflet.js to display dynamic, mobile-friendly maps.
+
+* **Contact Integration**: A fully functional contact form powered by EmailJS, allowing for direct communication without a backend server.
+
+* **Clean Architecture**: Refactored from inline styling to a centralized external CSS system (mysite.css) for better maintainability and performance.
+
+* **Responsive Design**: Optimized for various screen sizes, ensuring accessibility across desktop and mobile devices.
+
+* **Photo Gallery**: A dedicated section for visual content, organized with structured HTML.
 
 ## 🛠️ Technologies Used
 * **HTML5**: Semantic structure for all web pages, including headers, sections, and navigation.
-* *CSS3**: Custom layout, centering techniques, and grid systems.
+* **CSS3**: Custom layout, centering techniques, and grid systems.
+* **JavaScript**
+* **APIs/Libraries**: Leaflet.js (Maps), EmailJS (Contact form)
 
 ## 📂 Installation & Setup
 1. **Clone the repository**: 
