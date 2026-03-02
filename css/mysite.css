@@ -273,7 +273,7 @@ details summary {
   padding: 20px;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #000000;
+  color: #006803;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -283,6 +283,18 @@ details summary {
 details summary::after {
   content: "▼";
   color: #006803;
+}
+details[open] .univ {
+  color: #60269d;
+}
+details[open] .univ::after {
+  color: #60269d;
+}
+details[open] .cc {
+  color: #d92632;
+}
+details[open] .cc::after {
+  color: #d92632;
 }
 details[open] summary::after {
   content: "▲";

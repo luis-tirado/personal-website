@@ -219,7 +219,7 @@ details {
         padding: 20px;
         font-size: 1.1rem;
         font-weight: bold;
-        color: v.$header-bg;
+        color: v.$secondary;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
@@ -232,8 +232,26 @@ details {
         }
     }
 
-    &[open] summary::after {
-        content: '▲';
+    &[open] {
+        .univ {
+            color: v.$color-gcu;
+
+            &::after {
+                color: v.$color-gcu;
+            }
+        }
+
+        .cc {
+            color: v.$color-gcc;
+
+            &::after {
+                color: v.$color-gcc;
+            }
+        }
+
+        summary::after {
+            content: '▲';
+        }
     }
 }
 
