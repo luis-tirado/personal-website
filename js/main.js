@@ -53,7 +53,7 @@ const App = {
     setupStyleSwitcher() {
         const themeLink = document.getElementById('theme-link');
         // use SASS by default
-        const useSass = localStorage.getItem('useSass') === 'true';
+        const useSass = localStorage.getItem('useSass') !== 'false';
 
         if (themeLink) {
             themeLink.href = useSass ? 'css/mysite.css' : 'css/backup-mysite.css';

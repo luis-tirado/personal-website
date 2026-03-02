@@ -8,8 +8,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #1a1a1a;
+  background-color: #131314;
+  color: #0d0e0f;
 }
 
 img,
@@ -36,7 +36,7 @@ video {
 
 /* === HEADER & NAVIGATION === */
 header {
-  background-color: #2c3e50;
+  background-color: #000000;
   padding: 20px 5%;
   display: flex;
   justify-content: space-between;
@@ -69,7 +69,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background-color: #3498db;
+  background-color: #006803;
   color: #ffffff;
 }
 
@@ -80,7 +80,7 @@ main {
 }
 
 footer {
-  background-color: #2c3e50;
+  background-color: #000000;
   color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -93,16 +93,16 @@ footer {
   text-align: center;
   margin: 40px auto 30px;
   padding: 0 5%;
+  color: #ffffff;
 }
 .section-title h2 {
   display: inline-block;
   font-size: 2rem;
-  color: #2c3e50;
-  border-bottom: 4px solid #3498db;
+  color: #ffffff;
+  border-bottom: 4px solid #006803;
   padding-bottom: 5px;
 }
 .section-title p {
-  color: #666666;
   margin-top: 10px;
 }
 
@@ -113,9 +113,10 @@ footer {
   justify-content: center;
   gap: 40px;
   padding: 60px 5%;
-  background-color: #ecf0f1;
+  background-color: #0d0e0f;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 .hero .hero-text h1 {
   margin-bottom: 8px;
@@ -132,7 +133,7 @@ footer {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 5px solid #ffffff;
+  border: 5px solid #e0e0e0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   flex-shrink: 0;
 }
@@ -153,17 +154,21 @@ footer {
   transition: transform 0.2s ease, filter 0.2s ease;
   cursor: default;
 }
+.passion-pills li a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .passion-pills li.pill-cars {
-  background-color: #e74c3c;
+  background-color: #006803;
 }
 .passion-pills li.pill-soccer {
-  background-color: #27ae60;
+  background-color: #006803;
 }
 .passion-pills li.pill-software {
-  background-color: #8e44ad;
+  background-color: #006803;
 }
 .passion-pills li.pill-fitness {
-  background-color: #d35400;
+  background-color: #006803;
 }
 .passion-pills li:hover {
   transform: scale(1.05);
@@ -206,7 +211,7 @@ footer {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 12px 20px;
-  background-color: #3498db;
+  background-color: #006803;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
@@ -217,7 +222,7 @@ footer {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .card .btn:hover {
-  background-color: #3498db;
+  background-color: #006803;
   transform: translateY(-3px);
 }
 .card:active {
@@ -241,7 +246,7 @@ footer {
   color: #e74c3c;
 }
 .card.soccer h3, .card.soccer i {
-  color: #27ae60;
+  color: #006803;
 }
 .card.fitness h3, .card.fitness i {
   color: #d35400;
@@ -268,7 +273,7 @@ details summary {
   padding: 20px;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #2c3e50;
+  color: #000000;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -277,7 +282,7 @@ details summary {
 }
 details summary::after {
   content: "▼";
-  color: #3498db;
+  color: #006803;
 }
 details[open] summary::after {
   content: "▲";
@@ -336,7 +341,7 @@ details[open] summary::after {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #2c3e50;
+  color: #000000;
 }
 .contact-container .contact-form .form-group input,
 .contact-container .contact-form .form-group textarea {
@@ -354,11 +359,11 @@ details[open] summary::after {
 .contact-container .contact-form .form-group input:focus,
 .contact-container .contact-form .form-group textarea:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #006803;
 }
 .contact-container .contact-form .btn {
   width: 100%;
-  background-color: #3498db;
+  background-color: #006803;
   color: #ffffff;
   padding: 14px 20px;
   border: none;
@@ -371,7 +376,7 @@ details[open] summary::after {
   margin-top: 10px;
 }
 .contact-container .contact-form .btn:hover {
-  background-color: #3498db;
+  background-color: #006803;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
@@ -395,8 +400,8 @@ details[open] summary::after {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 .contact-info h3 {
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: #000000;
+  border-bottom: 2px solid #006803;
   padding-bottom: 8px;
   display: inline-block;
 }
@@ -411,7 +416,7 @@ details[open] summary::after {
   color: #666666;
 }
 .contact-info table td strong {
-  color: #2c3e50;
+  color: #000000;
   margin-right: 8px;
 }
 .contact-info table tr:last-child td {
@@ -422,7 +427,7 @@ details[open] summary::after {
   text-align: center;
 }
 .social-connect h3 {
-  color: #2c3e50;
+  color: #000000;
 }
 .social-connect nav {
   display: flex;
@@ -470,7 +475,7 @@ details[open] summary::after {
 .photo-grid .button {
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: #3498db;
+  background-color: #006803;
   color: white;
 }
 .photo-grid figure {
@@ -524,8 +529,8 @@ details[open] summary::after {
   background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
 }
 .placeholder-box.placeholder-slider {
-  border-color: #3498db;
-  color: #2c3e50;
+  border-color: #006803;
+  color: #000000;
   position: relative;
 }
 .placeholder-box.placeholder-slider::before {
@@ -602,7 +607,7 @@ details[open] summary::after {
   height: 0;
   overflow: hidden;
   border-radius: 10px;
-  background: #1a1a1a;
+  background: #0d0e0f;
 }
 .modal .modal-content .video-container iframe,
 .modal .modal-content .video-container video {

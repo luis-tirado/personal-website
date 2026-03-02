@@ -5,17 +5,17 @@
     text-align: center;
     margin: 40px auto 30px;
     padding: 0 5%;
+    color: v.$white;
 
     h2 {
         display: inline-block;
         font-size: 2rem;
-        color: v.$header-bg;
+        color: v.$white;
         border-bottom: 4px solid v.$primary-color;
         padding-bottom: 5px;
     }
 
     p {
-        color: v.$text-light;
         margin-top: 10px;
     }
 }
@@ -27,9 +27,10 @@
     justify-content: center;
     gap: 40px;
     padding: 60px 5%;
-    background-color: #ecf0f1;
+    background-color: v.$black-intro;
     border-bottom: 1px solid v.$border-color;
     margin-bottom: 10px;
+    color: v.$white;
 
     .hero-text {
         h1 {
@@ -51,7 +52,7 @@
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
-        border: 5px solid v.$white;
+        border: 5px solid v.$border-color;
         box-shadow: v.$shadow;
         flex-shrink: 0;
     }
@@ -75,8 +76,13 @@
         transition: transform 0.2s ease, filter 0.2s ease;
         cursor: default;
 
+        a {
+            text-decoration: none;
+            color: v.$white;
+        }
+
         &.pill-cars {
-            background-color: v.$color-cars;
+            background-color: v.$color-soccer;
         }
 
         &.pill-soccer {
@@ -84,11 +90,11 @@
         }
 
         &.pill-software {
-            background-color: v.$color-software;
+            background-color: v.$color-soccer;
         }
 
         &.pill-fitness {
-            background-color: v.$color-fitness;
+            background-color: v.$color-soccer;
         }
 
         &:hover {
