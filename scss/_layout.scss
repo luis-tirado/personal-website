@@ -15,7 +15,9 @@ header {
 .logo img {
     height: 90px;
     width: 90px;
-    border-radius: 5px;
+    max-width: 90px;
+    border: 3px solid v.$primary-color;
+    border-radius: 100%;
 }
 
 nav {
@@ -37,6 +39,57 @@ nav a:hover,
 nav a.active {
     background-color: v.$primary-color;
     color: v.$white;
+}
+
+/* === BOOTSTRAP NAV OVERRIDE === */
+.navbar {
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar .nav-link {
+    color: v.$white;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: v.$primary-color;
+    color: v.$white;
+}
+
+.navbar .nav-item {
+    margin: 0 10px;
+}
+
+/* === OFFCANVAS MENU === */
+.offcanvas {
+    background-color: v.$header-bg;
+    width: 250px;
+}
+
+.offcanvas-title {
+    color: v.$white;
+}
+
+.offcanvas .nav-link {
+    color: v.$white;
+    font-weight: 500;
+    padding: 12px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.offcanvas .nav-link:hover,
+.offcanvas .nav-link.active {
+    background-color: v.$primary-color ;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid v.$white;
 }
 
 /* === MAIN CONTENT & FOOTER === */

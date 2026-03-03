@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Projects | Luis Tirado</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Linked to external CSS -->
     <link rel="stylesheet" id="theme-link" href="css/mysite.css?v=2">
     <!-- Link to Icons -->
@@ -23,82 +27,91 @@
             <p>A collection of my software development work, APIs, tools, and open-source contributions</p>
         </div>
 
-        <div class="grid-container">
-            <!-- Project 1 -->
-            <!-- Static Site Generator -->
-            <article class="card">
-                <img src="img/static-site.jpg" alt="Static Site Generator"
-                    onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'#eee\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'10\'>SSG</text></svg>'">
-                <!-- Card Title -->
-                <h3>Static Site Generator</h3>
-                <!-- Card Description -->
-                <p>A Python-based tool that automates the process of converting Markdown files into a structured HTML
-                    website, demonstrating back-end logic and file system management.</p>
-                <!-- Card Button -->
-                <div style="margin-top: 15px;">
-                    <!-- Link to GitHub repo -->
-                    <a href="https://github.com/luis-tirado/static_site_generator" target="_blank">
-                        <button class="btn"
-                            style="padding: 8px 15px; font-size: 0.9rem; background: #333; color: white; border: none; cursor: pointer;">📂GitHub</button>
-                    </a>
-                </div>
-            </article>
+        <div class="projects-container">
 
-            <!-- Project 2 -->
-            <article class="card">
-                <!-- Asteroid Blaster -->
-                <img src="img/asteroid.jpg" alt="Asteroid Blaster"
-                    onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'#eee\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'10\'>Game</text></svg>'">
-                <h3>Asteroid Blaster</h3>
-                <p>An interactive arcade-style game built with Python and Pygame, featuring real-time state management,
-                    collision detection, and sprite animation.</p>
-                <div style="margin-top: 15px;">
-                    <!-- Demo Button -->
-                    <button class="btn" id="openDemo">🔗Demo</button>
-                    <dialog id="videoModal">
-                        <button id="closeDemo">Close</button>
-                        <video autoplay muted loop playsinline style="max-width: 100%; width: 600px; display: block;">
-                            <source src="media/asteroidDemo.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </dialog>
-                    <a href="https://github.com/luis-tirado/asteroid_blaster" target="_blank">
-                        <button class="btn"
-                            style="padding: 8px 15px; font-size: 0.9rem; background: #333; color: white; border: none; cursor: pointer;">📂GitHub</button>
-                    </a>
+            <!-- Project 1 - Static Site Generator -->
+            <div class="card mb-3 project-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/static-site.jpg" class="img-fluid rounded-start project-img"
+                            alt="Static Site Generator">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Static Site Generator</h5>
+                            <p class="card-text">A Python-based tool that automates the process of converting Markdown
+                                files into a structured HTML website, demonstrating back-end logic and file system
+                                management.</p>
+                            <a href="https://github.com/luis-tirado/static_site_generator" target="_blank">
+                                <button class="btn project-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </article>
+            </div>
 
-            <!-- Project 3 -->
-            <article class="card">
-                <!-- Bookbot -->
-                <img src="img/bookbot.png" alt="Bookbot"
-                    onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'#eee\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'10\'>Analysis</text></svg>'">
-                <h3>Bookbot</h3>
-                <p>A command-line application that performs static analysis on text files to provide word counts and
-                    character frequency reports using Python.</p>
-                <div style="margin-top: 15px;">
-                    <a href="https://github.com/luis-tirado/bookbot" target="_blank">
-                        <button class="btn"
-                            style="padding: 8px 15px; font-size: 0.9rem; background: #333; color: white; border: none; cursor: pointer;">📂GitHub</button>
-                    </a>
+            <!-- Project 2 - Asteroid Blaster -->
+            <div class="card mb-3 project-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/asteroid.jpg" class="img-fluid rounded-start project-img" alt="Asteroid Blaster">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Asteroid Blaster</h5>
+                            <p class="card-text">An interactive arcade-style game built with Python and Pygame,
+                                featuring real-time state management, collision detection, and sprite animation.</p>
+                            <button class="btn project-btn" id="openDemo"><i class="fa-solid fa-play"></i> Demo</button>
+                            <dialog id="videoModal">
+                                <button id="closeDemo">Close</button>
+                                <video autoplay muted loop playsinline
+                                    style="max-width: 100%; width: 600px; display: block;">
+                                    <source src="media/asteroidDemo.mp4" type="video/mp4">
+                                </video>
+                            </dialog>
+                            <a href="https://github.com/luis-tirado/asteroid_blaster" target="_blank">
+                                <button class="btn project-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </article>
+            </div>
 
-            <!-- Coming Soon Card-->
-            <article class="card">
-                <!-- Icon -->
-                <i class="fa-solid fa-tools"></i>
-                <h3>Under Construction</h3>
-                <p>Project being developed. Updates coming soon.</p>
-                <div style="margin-top: 15px;">
-                    <a href="" target="_blank">
-                        <button class="btn"
-                            style="padding: 8px 15px; font-size: 0.9rem; background: #333; color: white; border: none; cursor: pointer;">
-                            Coming Soon</button>
-                    </a>
+            <!-- Project 3 - Bookbot -->
+            <div class="card mb-3 project-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/bookbot.png" class="img-fluid rounded-start project-img" alt="Bookbot">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Bookbot</h5>
+                            <p class="card-text">A command-line application that performs static analysis on text files
+                                to provide word counts and character frequency reports using Python.</p>
+                            <a href="https://github.com/luis-tirado/bookbot" target="_blank">
+                                <button class="btn project-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </article>
+            </div>
+
+            <!-- Coming Soon -->
+            <div class="card mb-3 project-card">
+                <div class="row g-0">
+                    <div class="col-md-4 project-coming-soon">
+                        <i class="fa-solid fa-tools"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Under Construction</h5>
+                            <p class="card-text">Project being developed. Updates coming soon.</p>
+                            <button class="btn project-btn">Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -106,6 +119,9 @@
     <div id="footer-placeholder"></div>
 
     <!-- Link to external JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -2,12 +2,45 @@
     <div class="logo">
         <img src="img/icons/logo.png" alt="Luis Tirado Logo">
     </div>
-    <nav>
-        <a href="index.html">About</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="map.html">Map <i class="fa-solid fa-map-pin"></i></a>
-        <a href="photos.html">Photos</a>
-        <a href="projects.html">Projects <i class="fa-solid fa-flask"></i></a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+                aria-controls="offcanvasNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop links (hidden on mobile) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map.html">Map <i class="fa-solid fa-map-pin"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects <i
+                                class="fa-solid fa-flask"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
+
+<!-- Offcanvas Panel -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="map.html">Map <i class="fa-solid fa-map-pin"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects <i class="fa-solid fa-flask"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
