@@ -20,8 +20,8 @@ This project is a personal website designed to showcase my background, interests
 ## 🛠️ Technologies Used
 * **HTML5**: Semantic structure for all web pages, including headers, sections, and navigation.
 * **CSS3**: Custom layout, centering techniques, and grid systems.
-* **JavaScript**
-* **APIs/Libraries**: Leaflet.js (Maps), EmailJS (Contact form)
+* **JavaScript**: Main Script.
+* **APIs/Libraries**: Leaflet.js (Maps), EmailJS (Contact form), Bootstrap (Components)
 
 ## 📂 Installation & Setup
 1. **Clone the repository**: 
