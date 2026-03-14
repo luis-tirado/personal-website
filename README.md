@@ -1,121 +1,80 @@
-# Luis Tirado — Personal Portfolio Website
+Personal Professional Portfolio
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=flat&logo=bootstrap&logoColor=white)
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)
-![Leaflet](https://img.shields.io/badge/Leaflet.js-199900?style=flat&logo=leaflet&logoColor=white)
+A comprehensive professional portfolio website designed to showcase software development projects, technical expertise, and personal interests. This project serves as a central hub for my professional growth, featuring a responsive design and modular architecture.
 
-A responsive, multi-page personal portfolio website built with vanilla web technologies. Designed to showcase software development projects, technical writing, and personal interests — with a focus on clean code, modular architecture, and mobile-first design.
+📋 Project Overview
 
----
+This website was developed as part of the CST-120: Web Development course at Grand Canyon University. It highlights the transition from static web pages to dynamic, component-based web applications, focusing on clean code and user experience.
 
-## 📋 Overview
+🚀 Key Features
 
-This site was developed as part of the **CST-120: Web Development** course at Grand Canyon University. It demonstrates a progression from static HTML pages toward a more maintainable, component-driven approach using jQuery for dynamic fragment loading.
+Modular Architecture: Utilizes jQuery to load reusable HTML fragments (Header/Footer), ensuring consistent navigation and branding while making the site much easier to maintain.
 
-**Live pages include:**
-- `index.html` — Landing page / About me
-- `projects.html` — Software development portfolio
-- `automotive-blog.html` — Technical writing on automotive design & engineering
-- `hobbies.html` — Personal interests
-- `photos.html` — Photography gallery
-- `map.html` — Interactive map with Leaflet.js
-- `contact.html` — Contact form with external processing
+Automotive Design Blog: A dedicated space exploring the intersection of engineering and design, featuring technical entries on aerodynamics, mechanical maintenance, and cockpit ergonomics.
 
----
+Dynamic Navigation: Custom JavaScript logic that automatically detects the current page URL and applies the active class to the corresponding navigation link.
 
-## ✨ Features
+Interactive Mapping: Integrated Leaflet.js to provide mobile-friendly, interactive maps with custom markers.
 
-- **Modular Header/Footer** — Reusable HTML fragments loaded via jQuery, keeping navigation consistent and easy to update across all pages.
-- **Dynamic Active Navigation** — JavaScript automatically detects the current page URL and applies the `.active` class to the matching nav link.
-- **Automotive Design Blog** — Technical entries covering aerodynamics, mechanical maintenance, and cockpit ergonomics.
-- **Interactive Map** — Powered by [Leaflet.js](https://leafletjs.com/) with custom markers and a mobile-friendly interface.
-- **Contact Form** — Bootstrap-styled form configured for external processing (Postman Echo / EmailJS).
-- **SCSS Architecture** — Source styles are organized in `/scss` and compiled to `/css` for clean, scalable theming.
-- **Responsive Design** — Mobile-first layout using Bootstrap 5, tested across desktop, tablet, and smartphone viewports.
+Professional Contact System: A fully functional contact form powered by Bootstrap and configured for external data processing services (Postman Echo/EmailJS).
 
----
+Responsive Design: Built with a "mobile-first" approach using Bootstrap 5, ensuring accessibility across desktops, tablets, and smartphones.
 
-## 🛠️ Tech Stack
+🛠️ Technologies Used
 
-| Category      | Technologies                          |
-|---------------|---------------------------------------|
-| Markup        | HTML5                                 |
-| Styling       | CSS3, SCSS                            |
-| Frameworks    | Bootstrap 5                           |
-| Libraries     | jQuery, Leaflet.js                    |
-| Dev Tools     | VS Code, Git, Live Server             |
+Frontend: HTML5, CSS3, and SCSS for scalable styling.
 
----
+Frameworks: Bootstrap 5 for layout and UI components.
 
-## 📂 Project Structure
+Libraries: jQuery for DOM manipulation and asynchronous fragment loading.
 
-```
-personal-website/
-├── css/                  # Compiled production stylesheets
-├── scss/                 # Source SCSS files (nested, modular)
-├── js/                   # Custom JavaScript (main.js, fragment loader)
-├── img/                  # Static images and icons
-├── media/                # Multimedia assets (videos, logos)
-├── files/                # Downloadable assets (PDFs, reports)
-├── index.html            # Landing page
-├── projects.html         # Portfolio / projects
-├── automotive-blog.html  # Technical blog
-├── hobbies.html          # Personal interests
-├── photos.html           # Photo gallery
-├── map.html              # Interactive Leaflet map
-├── contact.html          # Contact form
-├── header.html           # Reusable header fragment
-├── footer.html           # Reusable footer fragment
-└── README.md
-```
+Mapping: Leaflet.js (Open-source interactive maps).
 
----
+Dev Tools: VS Code, Git, Live Server.
 
-## ⚙️ Getting Started
+📂 Project Structure
 
-> **Note:** This project uses asynchronous fragment loading (jQuery `.load()`), so it must be served over HTTP — opening `index.html` directly in a browser won't work correctly.
+📂 personal-website
+├── 📁 css            # Compiled production styles
+├── 📁 scss           # Source SCSS files (clean, nested styling)
+├── 📁 js             # Custom scripts (main.js, fragment loading)
+├── 📁 fragments      # Reusable HTML components (_header.html, _copyright.html)
+├── 📁 media          # Multimedia assets (Images, Videos, Logos)
+├── 📁 files          # Downloadable assets (Reports, PDF Credentials)
+├── automotive-blog.html
+├── contact.html      # Process-ready contact page
+└── index.html        # Main landing page
 
-### 1. Clone the repository
 
-```bash
-git clone https://github.com/luis-tirado/personal-website.git
+⚙️ Installation & Setup
+
+To run this project locally:
+
+Clone the Repository:
+
+git clone [https://github.com/luis-tirado/personal-website.git](https://github.com/luis-tirado/personal-website.git)
+
+
+Navigate to the Folder:
+
 cd personal-website
-```
 
-### 2. Run a local server
 
-**Option A — VS Code Live Server (recommended)**
-Right-click `index.html` and select **"Open with Live Server"**.
+Run Locally:
+Because this project uses asynchronous loading for header/footer fragments, you must use a local server.
 
-**Option B — Python**
-```bash
-python -m http.server 8000
-```
-Then open `http://localhost:8000` in your browser.
+In VS Code, right-click index.html and select "Open with Live Server".
 
----
+Alternatively, use any local HTTP server (like python -m http.server).
 
-## 🗺️ Roadmap
+🗺️ Roadmap
 
-- [ ] Dark mode toggle using SCSS variables
-- [ ] Project gallery with filter-by-tech-stack functionality
-- [ ] SEO optimization and Lighthouse performance audit
-- [ ] Migrate fragment loading to a static site generator or build step
+[ ] Implementation of Dark Mode toggle using SCSS variables.
 
----
+[ ] Integration of a Project Gallery with filtering by technology stack.
 
-## 👤 Author
+[ ] SEO optimization and performance audits via Lighthouse.
 
-**Luis Tirado**
-Software Development Student @ Grand Canyon University
-Associate of Computer Science @ Glendale Community College
-
----
-
-## 📄 License
+Luis Tirado Software Development Student @ Grand Canyon University Associate of Computer Science @ Glendale Community College
 
 © 2026 Luis Tirado. All rights reserved.
