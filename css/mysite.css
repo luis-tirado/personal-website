@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* ... (previous :root and reset styles) ... */
 * {
   margin: 0;
@@ -23,7 +24,7 @@ video {
 /* Ensure that placeholders don't break the layout of specific items */
 .profile-pic[src^="data:image/svg+xml"] {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-color: #ecf0f1;
 }
 
@@ -148,6 +149,7 @@ footer {
   padding: 0 5%;
   color: #ffffff;
 }
+
 .section-title h2 {
   display: inline-block;
   font-size: 2rem;
@@ -155,6 +157,7 @@ footer {
   border-bottom: 4px solid #006803;
   padding-bottom: 5px;
 }
+
 .section-title p {
   margin-top: 10px;
 }
@@ -171,27 +174,32 @@ footer {
   margin-bottom: 10px;
   color: #ffffff;
 }
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
   }
 }
+
 .hero .hero-text h1 {
   margin-bottom: 8px;
 }
+
 .hero .hero-text h2 {
   margin-bottom: 20px;
 }
+
 .hero .hero-text p {
   margin-bottom: 12px;
 }
+
 .hero .profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 5px solid #e0e0e0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   max-width: 200px;
@@ -204,12 +212,14 @@ footer {
   margin-top: 15px;
   flex-wrap: wrap;
 }
+
 @media (max-width: 768px) {
   .passion-pills {
     text-align: center;
     align-items: center;
   }
 }
+
 .passion-pills li {
   color: #ffffff;
   padding: 8px 20px;
@@ -220,22 +230,28 @@ footer {
   align-items: center;
   cursor: default;
 }
+
 .passion-pills li a {
   text-decoration: none;
   color: #ffffff;
 }
+
 .passion-pills li.pill-cars {
   background-color: #006803;
 }
+
 .passion-pills li.pill-soccer {
   background-color: #006803;
 }
+
 .passion-pills li.pill-software {
   background-color: #006803;
 }
+
 .passion-pills li.pill-fitness {
   background-color: #006803;
 }
+
 .passion-pills li:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
@@ -250,6 +266,7 @@ footer {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   text-align: justify;
 }
+
 .history-box p {
   margin-bottom: 15px;
 }
@@ -263,6 +280,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .grid-container .card {
   background-color: #ffffff;
   padding: 30px 20px;
@@ -271,20 +289,24 @@ footer {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .grid-container .card i {
   font-size: 3rem;
   margin-bottom: 15px;
   display: inline-block;
 }
+
 .grid-container .card h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
+
 .grid-container .card p {
   color: #666666;
   font-size: 0.95rem;
   text-align: left;
 }
+
 .grid-container .card .btn {
   display: block;
   width: 100%;
@@ -299,19 +321,33 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.grid-container .card .btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .grid-container .card .btn:hover {
   transform: translateY(-3px);
 }
-.grid-container .card.cars h3, .grid-container .card.cars i {
+
+.grid-container .card.cars h3,
+.grid-container .card.cars i {
   color: #e74c3c;
 }
-.grid-container .card.soccer h3, .grid-container .card.soccer i {
+
+.grid-container .card.soccer h3,
+.grid-container .card.soccer i {
   color: #006803;
 }
-.grid-container .card.fitness h3, .grid-container .card.fitness i {
+
+.grid-container .card.fitness h3,
+.grid-container .card.fitness i {
   color: #d35400;
 }
-.grid-container .card.software h3, .grid-container .card.software i {
+
+.grid-container .card.software h3,
+.grid-container .card.software i {
   color: #8e44ad;
 }
 
@@ -329,6 +365,7 @@ details {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
 details summary {
   padding: 20px;
   font-size: 1.1rem;
@@ -340,22 +377,28 @@ details summary {
   align-items: center;
   list-style: none;
 }
+
 details summary::after {
   content: "▼";
   color: #006803;
 }
+
 details[open] .univ {
   color: #60269d;
 }
+
 details[open] .univ::after {
   color: #60269d;
 }
+
 details[open] .cc {
   color: #d92632;
 }
+
 details[open] .cc::after {
   color: #d92632;
 }
+
 details[open] summary::after {
   content: "▲";
 }
@@ -368,9 +411,11 @@ details[open] summary::after {
   align-items: center;
   gap: 20px;
 }
+
 .details-content p {
   flex: 1;
 }
+
 .details-content .school-logo {
   width: 100px;
   height: auto;
@@ -378,6 +423,7 @@ details[open] summary::after {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
+
 @media (max-width: 650px) {
   .details-content {
     flex-direction: column-reverse;
@@ -393,12 +439,14 @@ details[open] summary::after {
   gap: 40px;
   align-items: flex-start;
 }
+
 .contact-container .contact-sidebar {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .contact-container .contact-form {
   flex: 1.5;
   background-color: #ffffff;
@@ -406,21 +454,25 @@ details[open] summary::after {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
 .contact-container .contact-form h3 {
   color: #000000;
   border-bottom: 2px solid #006803;
   padding-bottom: 8px;
   display: inline-block;
 }
+
 .contact-container .contact-form .form-group {
   margin-bottom: 20px;
 }
+
 .contact-container .contact-form .form-group label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
   color: #000000;
 }
+
 .contact-container .contact-form .form-group input,
 .contact-container .contact-form .form-group textarea {
   width: 100%;
@@ -430,15 +482,18 @@ details[open] summary::after {
   font-family: inherit;
   box-sizing: border-box;
 }
+
 .contact-container .contact-form .form-group textarea {
   min-height: 120px;
   resize: vertical;
 }
+
 .contact-container .contact-form .form-group input:focus,
 .contact-container .contact-form .form-group textarea:focus {
   outline: none;
   border-color: #006803;
 }
+
 .contact-container .contact-form .btn {
   width: 100%;
   background-color: #006803;
@@ -453,18 +508,22 @@ details[open] summary::after {
   display: block;
   margin-top: 10px;
 }
+
 .contact-container .contact-form .btn:hover {
   background-color: #006803;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
+
 .contact-container .contact-form .btn:active {
   transform: translateY(0);
 }
+
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
   }
+
   .contact-container .contact-sidebar,
   .contact-container .contact-form {
     width: 100%;
@@ -477,26 +536,31 @@ details[open] summary::after {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
 .contact-info h3 {
   color: #000000;
   border-bottom: 2px solid #006803;
   padding-bottom: 8px;
   display: inline-block;
 }
+
 .contact-info table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
 }
+
 .contact-info table td {
   padding: 12px 0;
   border-bottom: 1px solid #e0e0e0;
   color: #666666;
 }
+
 .contact-info table td strong {
   color: #000000;
   margin-right: 8px;
 }
+
 .contact-info table tr:last-child td {
   border-bottom: none;
 }
@@ -504,9 +568,11 @@ details[open] summary::after {
 .social-connect {
   text-align: center;
 }
+
 .social-connect h3 {
   color: #ffffff;
 }
+
 .social-connect nav {
   display: flex;
   justify-content: center;
@@ -514,6 +580,7 @@ details[open] summary::after {
   flex-wrap: wrap;
   margin-top: 15px;
 }
+
 .social-connect nav a {
   padding: 12px 20px;
   border-radius: 8px;
@@ -527,18 +594,23 @@ details[open] summary::after {
   transition: opacity 0.3s ease, transform 0.2s ease;
   width: 150px;
 }
+
 .social-connect nav a.social-linkedin {
   background-color: #0077b5;
 }
+
 .social-connect nav a.social-facebook {
   background-color: #1877f2;
 }
+
 .social-connect nav a.social-instagram {
   background-color: #e4405f;
 }
+
 .social-connect nav a.social-github {
   background-color: #333333;
 }
+
 .social-connect nav a:hover {
   opacity: 0.85;
   transform: translateY(-3px);
@@ -552,12 +624,14 @@ details[open] summary::after {
   padding: 0 5%;
   margin-bottom: 40px;
 }
+
 .photo-grid .button {
   padding: 10px 20px;
   border-radius: 20px;
   background-color: #006803;
   color: white;
 }
+
 .photo-grid figure {
   background: #ffffff;
   padding: 15px;
@@ -567,27 +641,31 @@ details[open] summary::after {
   margin: 0;
   transition: transform 0.3s ease;
 }
+
 .photo-grid figure:hover {
   transform: translateY(-5px);
 }
+
 .photo-grid figure img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: #f0f0f0;
 }
+
 .photo-grid figure video {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: #f0f0f0;
 }
+
 .photo-grid figure figcaption {
   font-size: 0.95rem;
   color: #666666;
@@ -608,11 +686,13 @@ details[open] summary::after {
   border: 2px dashed;
   background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
 }
+
 .placeholder-box.placeholder-slider {
   border-color: #006803;
   color: #000000;
   position: relative;
 }
+
 .placeholder-box.placeholder-slider::before {
   content: "‹";
   position: absolute;
@@ -620,6 +700,7 @@ details[open] summary::after {
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.1);
 }
+
 .placeholder-box.placeholder-slider::after {
   content: "›";
   position: absolute;
@@ -647,7 +728,7 @@ details[open] summary::after {
 .carousel-item img {
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 13px;
 }
 
@@ -668,10 +749,12 @@ details[open] summary::after {
   justify-content: center;
   /* Class added by JavaScript to show the modal */
 }
+
 .modal.show {
   display: flex;
   animation: fadeIn 0.3s ease;
 }
+
 .modal .modal-content {
   position: relative;
   background-color: #ffffff;
@@ -681,6 +764,7 @@ details[open] summary::after {
   width: 90%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
 .modal .modal-content .close-btn {
   position: absolute;
   top: -15px;
@@ -700,9 +784,11 @@ details[open] summary::after {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
+
 .modal .modal-content .close-btn:hover {
   transform: scale(1.1);
 }
+
 .modal .modal-content .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -712,6 +798,7 @@ details[open] summary::after {
   border-radius: 10px;
   background: #0d0e0f;
 }
+
 .modal .modal-content .video-container iframe,
 .modal .modal-content .video-container video {
   position: absolute;
@@ -727,11 +814,13 @@ details[open] summary::after {
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
+
 /* === MAP === */
 #interactive-map {
   height: 500px;
@@ -783,9 +872,9 @@ details[open] summary::after {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: left;
-     object-position: left;
+  object-position: left;
 }
 
 .project-coming-soon {
@@ -816,4 +905,76 @@ details[open] summary::after {
   background-color: #006803;
   transform: translateY(-2px);
   color: #ffffff;
+}
+
+/* === automotuve-blog === */
+.blog-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #666;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-category {
+  color: #28a745;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blog-title {
+  margin: 10px 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.blog-excerpt {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
 }
